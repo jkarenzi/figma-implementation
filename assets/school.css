@@ -1,0 +1,173 @@
+* {
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #161513;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background:#222222;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.ham{
+    display: none;
+}
+
+header img {
+    margin-left: 3rem;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    margin-right: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.p1 {
+    margin-top: 2rem;
+}
+
+.desc {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 2rem;
+}
+
+.bio {
+    text-align: center;
+    width: 25rem;
+    margin-top: 2rem;
+}
+
+span:nth-of-type(1){
+    color: #DF5F17;
+}
+
+span:nth-of-type(2){
+    color: #D33C3C;
+}
+
+
+.action-btns {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.action1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    border: none;
+}
+
+.action2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2rem;
+    background: #161513;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.exp {
+     
+}
+
+.exp1 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.dropdown {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #222222;
+    color:white;
+    height: 7rem;
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    width: 6rem;
+    padding-left: 1rem;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+    .p1{
+        width: 100px;
+        height: 100px;
+    }
+
+    .desc{
+        font-size: larger;
+        width: 90%;
+    }
+
+    .bio {
+        font-size: small;
+        font-weight: lighter;
+        width: 90%;
+    }
+
+    .exp1 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .ham {
+        display: flex;
+        margin-right: 1rem;
+    }
+
+    .action-btns{
+       gap: 1rem;
+    }
+}
